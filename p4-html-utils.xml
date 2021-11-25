@@ -3,7 +3,7 @@
 <HtmlTabList varName="htmltablist">
  <HtmlTab>
   <Definition>
-   <Name>p4v utils</Name>
+   <Name>p4v utils gc</Name>
    <!-- <Url>https://pineoc.github.io/p4v-html-utils/</Url> -->
    <Url>https://bymebyu.github.io/p4v-html-utils/</Url>
    
