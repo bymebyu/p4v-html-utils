@@ -1,4 +1,4 @@
-var p4query = 'changes -s submitted -l -m 1000';
+var p4query = 'changes -s submitted -l -m 100';
 var p4user;
 var p4workspace;
 
@@ -6,6 +6,7 @@ async function runOnload() {
   p4user = await p4vjs.getUser();
   p4workspace = await p4vjs.getClient();
 
+  p4query = p4query.concat(' -u', p4user);
   setQuery(p4query);
 
   document.getElementById('excuteBtn').addEventListener('click', executeQuery, false);
